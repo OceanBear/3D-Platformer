@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class InputManager : MonoBehaviour
 {
-
+    //create a singleton
     public UnityEvent<Vector3> OnMove = new UnityEvent<Vector3>();  // Event to pass movement direction
     public UnityEvent OnSpacePressed = new UnityEvent();
     public UnityEvent<Vector3> OnRightClick = new UnityEvent<Vector3>(); // Event for dash
