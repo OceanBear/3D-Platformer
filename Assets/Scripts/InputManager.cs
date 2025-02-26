@@ -22,6 +22,14 @@ public class InputManager : MonoBehaviour
         {
             input += Vector3.right;
         }
+        if (Input.GetKey(KeyCode.W))
+        {
+            input += Vector3.forward;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            input += Vector3.back;
+        }
         OnMove?.Invoke(input);
     }
 }
