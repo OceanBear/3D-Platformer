@@ -11,8 +11,7 @@ public class InputManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-
+    {        
         Vector3 input = Vector3.zero;
         if (Input.GetKey(KeyCode.A))
         {
@@ -31,5 +30,11 @@ public class InputManager : MonoBehaviour
             input += Vector3.back;
         }
         OnMove?.Invoke(input);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnSpacePressed?.Invoke();
+        }
+
     }
 }
