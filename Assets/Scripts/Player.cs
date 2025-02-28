@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
                 // Clear horizontal velocity when dash ends
                 rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, 0);
             }
+            rb.MoveRotation(Quaternion.Euler(0, freeLookCamera.eulerAngles.y, 0));
             return;
         }
         else
@@ -96,6 +97,8 @@ public class Player : MonoBehaviour
 
             // Apply the updated horizontal velocity while preserving the current vertical velocity
             rb.linearVelocity = new Vector3(newHorizontalVelocity.x, rb.linearVelocity.y, newHorizontalVelocity.z);
+            // Update player's rotation to match the free look camera's horizontal orientation
+            rb.MoveRotation(Quaternion.Euler(0, freeLookCamera.eulerAngles.y, 0));
         }
     }
 
