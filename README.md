@@ -22,4 +22,6 @@ Coins are scattered across the environment. When the player collides with a coin
 **Environment:**  
 The game includes a large flat plane with platforms, boxes, and invisible walls to create a controlled play area.
 
-https://github.com/user-attachments/assets/a466f0bb-6c5c-4763-b229-2c51e91982d8
+
+https://github.com/user-attachments/assets/eb7e3196-ade4-475f-bbc5-ed788e1aa84e
+
