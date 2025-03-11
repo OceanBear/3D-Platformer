@@ -2928,6 +2928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8505703251017782542, guid: 096b8396e2766a84bb76b04754a23996, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 8784738785297590263, guid: 096b8396e2766a84bb76b04754a23996, type: 3}
       propertyPath: inputManager
       value: 

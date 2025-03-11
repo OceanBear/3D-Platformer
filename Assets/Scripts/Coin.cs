@@ -4,6 +4,13 @@ using UnityEngine.SceneManagement;
 public class Coin : MonoBehaviour
 {
     // When the player enters the coin trigger, increase score and destroy the coin
+    [SerializeField] private float rotationSpeed = 90f; // Rotation speed in degrees per second
+    // Update is called once per frame
+    void Update()
+    {
+        // Rotate the coin continuously around its Y-axis
+        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+    }
     private void OnTriggerEnter(Collider other)
     {
         // Check if the colliding object is tagged as "Player"
